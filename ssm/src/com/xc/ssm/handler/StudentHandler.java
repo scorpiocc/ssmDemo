@@ -1,11 +1,11 @@
-package com.igeekhome.ssm.handler;
+package com.xc.ssm.handler;
 
 import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.igeekhome.ssm.service.StudentService;
+import com.xc.ssm.service.StudentService;
 
 @Controller
 @RequestMapping("/student")

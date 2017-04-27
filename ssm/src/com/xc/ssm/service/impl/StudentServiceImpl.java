@@ -1,15 +1,14 @@
-package com.igeekhome.ssm.service.impl;
+package com.xc.ssm.service.impl;
 
 import java.util.List;
 
 import javax.annotation.Resource;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.igeekhome.ssm.dao.StudentMapper;
-import com.igeekhome.ssm.entity.Student;
-import com.igeekhome.ssm.service.StudentService;
+import com.xc.ssm.dao.StudentMapper;
+import com.xc.ssm.entity.Student;
+import com.xc.ssm.service.StudentService;
 
 /**
  * 注入方式一般有两种，一种是按类型注入：@Resource，还有一种按名称注入@Autowired

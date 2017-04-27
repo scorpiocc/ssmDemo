@@ -1,8 +1,8 @@
-package com.igeekhome.ssm.service;
+package com.xc.ssm.service;
 
 import java.util.List;
 
-import com.igeekhome.ssm.entity.Student;
+import com.xc.ssm.entity.Student;
 
 public interface StudentService {
 	public List<Student> queryAllStudent();

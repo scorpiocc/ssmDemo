@@ -1,8 +1,8 @@
-package com.igeekhome.ssm.dao;
+package com.xc.ssm.dao;
 
 import java.util.List;
 
-import com.igeekhome.ssm.entity.Student;
+import com.xc.ssm.entity.Student;
 
 public interface StudentMapper {
 

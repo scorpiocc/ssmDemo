@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.igeekhome.ssm.dao.StudentMapper" >
-  <resultMap id="BaseResultMap" type="com.igeekhome.ssm.entity.Student" >
+<mapper namespace="com.xc.ssm.dao.StudentMapper" >
+  <resultMap id="BaseResultMap" type="com.xc.ssm.entity.Student" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="s_name" property="sName" jdbcType="VARCHAR" />
     <result column="s_age" property="sAge" jdbcType="INTEGER" />
@@ -24,13 +24,13 @@
     delete from student
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.igeekhome.ssm.entity.Student" >
+  <insert id="insert" parameterType="com.xc.ssm.entity.Student" >
     insert into student (id, s_name, s_age
       )
     values (#{id,jdbcType=INTEGER}, #{sName,jdbcType=VARCHAR}, #{sAge,jdbcType=INTEGER}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.igeekhome.ssm.entity.Student" >
+  <insert id="insertSelective" parameterType="com.xc.ssm.entity.Student" >
     insert into student
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -55,7 +55,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.igeekhome.ssm.entity.Student" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.xc.ssm.entity.Student" >
     update student
     <set >
       <if test="sName != null" >
@@ -67,7 +67,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.igeekhome.ssm.entity.Student" >
+  <update id="updateByPrimaryKey" parameterType="com.xc.ssm.entity.Student" >
     update student
     set s_name = #{sName,jdbcType=VARCHAR},
       s_age = #{sAge,jdbcType=INTEGER}

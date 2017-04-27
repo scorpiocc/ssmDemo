@@ -1,4 +1,4 @@
-package com.igeekhome.ssm.entity;
+package com.xc.ssm.entity;
 
 import org.springframework.stereotype.Component;
 
